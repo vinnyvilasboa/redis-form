@@ -1,21 +1,24 @@
 {
-  "name": "redis-form",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "next lint"
-  },
-  "dependencies": {
-    "next": "13.2.4",
-    "react": "18.2.0",
-    "react-dom": "18.2.0",
-    "redis-om": "^0.3.6"
-  },
-  "devDependencies": {
-    "eslint": "8.37.0",
-    "eslint-config-next": "13.2.4"
-  }
+    "name": "redis-form",
+    "version": "0.1.0",
+    "private": true,
+    "topLevelAwait": true,
+    "scripts": {
+        "dev": "next dev",
+        "build": "next build",
+        "start": "node --experimental-top-level-await node_modules/.bin/next start",
+        "lint": "next lint"
+    },
+    "dependencies": {
+        "bootstrap": "^5.2.3",
+        "next": "13.2.4",
+        "react": "18.2.0",
+        "react-dom": "18.2.0",
+        "redis": "^4.6.5",
+        "redis-om": "^0.3.6"
+    },
+    "devDependencies": {
+        "eslint": "8.37.0",
+        "eslint-config-next": "13.2.4"
+    }
 }
